@@ -5,7 +5,7 @@ Cisco SNMP enumeration, brute force, config downloader and password cracking scr
 
 Tested and designed to work against Cisco IOS Switches and Routers.
 
-Complete rewrite of my original script
+Complete rewrite of my original script, no longer requires Metasploit. 
 
 Released under AGPL see LICENSE for more information
 
