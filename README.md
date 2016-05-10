@@ -5,9 +5,7 @@ Cisco SNMP enumeration, brute force, config downloader and password cracking scr
 
 Tested and designed to work against Cisco IOS Switches and Routers.
 
-Complete rewrite of my original script hosted here:
-
-https://github.com/nccgroup/cisco-SNMP-enumeration
+Complete rewrite of my original script
 
 Released under AGPL see LICENSE for more information
 
