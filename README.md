@@ -31,8 +31,8 @@ Features
 * If it finds Cisco type 7 encoded enable or telnet passwords it will auto decode them.
 * It will display the Enable secret type 5 password hash.
 * Added command line features, can specify single community, list of communites in file and router IP. -h to display help.
-* Has a few built in communites in the script code, if no string or list or strings supplied it will try the built in ones.
-* Much faster as no long uses Metasploit, only checks RW access against RO strings found to save duplicate checks. Uses built in TFTP server.
+* Has a few built-in communites in the script code, if no string or list or strings supplied it will try the built in ones.
+* Much faster as no longer uses Metasploit, only checks RW access against RO strings found to save duplicate checks. Uses built in TFTP server.
 
 Requirements   
 =======================
