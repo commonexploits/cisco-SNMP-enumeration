@@ -563,7 +563,7 @@ if [ "$CHECKMYINT" != "$MYINT" ]
 			   printf '\n \r%s %s\n\n' "${BRIGHT}${RED}[!]${NORMAL}" "Sorry the interface you entered does not exist! - check and try again."
                exit 0
 		else
-				LOCALIP=$(ip addr |grep "$MYINT" |grep "inet" |cut -d "." -f 1,2,3,4 |cut -d "/" -f 1 | cut -d "t" -f 2 |awk '{sub(/^[ \t]+/, ""); print}')
+				LOCALIP=$(ip -f inet -o addr show "$MYINT"|cut -d\  -f 7 | cut -d/ -f 1)
 				if [ -z "$LOCALIP" ]
 					then
 						printf '\r\n%s \n\n' "${BRIGHT}${RED}[!]${NORMAL} ${BRIGHT}${GREEN}"$MYINT"${NORMAL} has no IP Address set, please select an interface that has an IP Address configured"
